@@ -1,0 +1,25 @@
+@import "../vars";
+
+.button {
+  border-radius: 5px;
+  padding: 15px 30px;
+  background-color: $bgRed;
+  transition: background-color 0.3s ease 0s;
+
+  &__text {
+    color: $white;
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  &_blue {
+    background-color: $bgBlue;
+  }
+
+  &:hover {
+    background-color: $bgBlueHvr;
+  }
+}

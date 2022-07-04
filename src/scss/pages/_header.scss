@@ -1,0 +1,17 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 114px;
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+
+  &__button {
+    flex: 0 0 252px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
