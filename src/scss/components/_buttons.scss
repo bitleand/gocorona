@@ -24,9 +24,9 @@ button {
 
   &_blue {
     background-color: $bgBlue;
-  }
 
-  &:hover {
-    background-color: $bgBlueHvr;
+    &:hover {
+      background-color: $bgBlueHvr;
+    }
   }
 }
