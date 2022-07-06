@@ -2,11 +2,16 @@
 @import "fonts";
 
 // pages
-@import "pages/header";
-@import "pages/main";
-@import "pages/footer";
+@import "pages/pages-header";
+@import "pages/pages-main";
+@import "pages/pages-footer";
 
 // components
-@import "components/block";
-@import "components/menu";
-@import "components/buttons";
+@import "components/components-block";
+@import "components/components-menu";
+@import "components/components-buttons";
+
+// section
+@import "section/section-started";
+@import "section/section-features";
+@import "section/section-experts";
