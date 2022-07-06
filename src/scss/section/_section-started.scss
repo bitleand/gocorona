@@ -1,7 +1,7 @@
 @import "../vars";
 
 .started {
-  background-color: $bgStartedSct;
+  background-color: $bgSection;
 
   &__container {
     position: relative;
@@ -78,7 +78,7 @@
     @media (max-width: 767.98px) {
       z-index: 5;
       padding: 20px;
-      background-color: $bgStartedSct;
+      background-color: $bgSection;
       border-radius: 20px;
       flex: 1 1 100%;
     }
