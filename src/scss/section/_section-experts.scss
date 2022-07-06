@@ -1,0 +1,48 @@
+@import "../vars";
+
+.experts {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    margin-right: 10px;
+    flex: 0 1 50%;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  &__block {
+    max-width: 350px;
+  }
+
+  &__video {
+    flex: 0 1 50%;
+    padding-bottom: 28%;
+    position: relative;
+    box-shadow: 0 4px 18px rgba(88, 126, 236, 0.18);
+    overflow: hidden;
+    border-radius: 8px;
+
+    &-iframe {
+      position: absolute;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-bottom: 58%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

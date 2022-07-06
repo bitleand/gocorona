@@ -15,6 +15,10 @@
     position: relative;
     display: flex;
     z-index: 2;
+
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
   }
 
   &-block {
@@ -37,6 +41,12 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 5.92px;
+    }
+
+    @media (max-width: 767.98px) {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
     }
   }
 
