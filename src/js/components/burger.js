@@ -8,4 +8,4 @@ const onClickMenu = (menu, nav, body) => menu.addEventListener('click', () => {
     body.classList.toggle('lock');
 });
 
-onClickMenu(menuButton, navBlock, bodyBlock)
+onClickMenu(menuButton, navBlock, bodyBlock);

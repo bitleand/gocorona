@@ -1,17 +1,5 @@
 @import "vars";
-@import "fonts";
-
-// pages
-@import "pages/pages-header";
-@import "pages/pages-main";
-@import "pages/pages-footer";
-
-// components
-@import "components/components-block";
-@import "components/components-menu";
-@import "components/components-buttons";
-
-// section
-@import "section/section-started";
-@import "section/section-features";
-@import "section/section-about";
+@import "components";
+@import "pages";
+@import "section";
+@import "reset";
