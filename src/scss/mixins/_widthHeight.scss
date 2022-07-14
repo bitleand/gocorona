@@ -1,0 +1,14 @@
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin maxWmaxH($maxW, $maxH) {
+  max-width: $maxW;
+  max-height: $maxH;
+}
+
+@mixin minWminH($minW, $minH) {
+  min-width: $minW;
+  min-height: $minH;
+}

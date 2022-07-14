@@ -1,0 +1,12 @@
+/* stylelint-disable */
+
+@mixin text($fw, $fz, $clr) {
+  font-weight: $fw;
+  font-size: $fz;
+  color: $clr,
+}
+
+@mixin lineHletterS($lineH, $letterS) {
+  line-height: $lineH;
+  letter-spacing: $letterS;
+}

@@ -1,60 +1,112 @@
-*, *:before, *:after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	border: 0;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-html, body {
-	height: 100%;
-	line-height: 1;
+html {
+  -webkit-text-size-adjust: 100%;
+
+  box-sizing: border-box;
+  height: 100%;
 }
 
 body {
+  margin: 0;
+  height: 100%;
+  font-size: 12px;
+  min-width: 320px;
+  min-height: 100%;
+  font-weight: 400;
 	font-family: Rubik, sans-serif;
-	font-size: 12px;
-	color: $gray;
 
-	&.lock {
+  &.lock {
 		overflow: hidden;
 	}
 }
 
-a {
-	text-decoration: none;
+ul, li, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-ol, ul, li {
-	list-style: none;
+label {
+  cursor: pointer;
+}
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  height: 0;
+}
+
+details, legend {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+button {
+  background-color: transparent;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+input {
+  -webkit-appearance: none;
+
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+
+  &::-ms-clear,
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+img, svg, video {
+  display: inline-block;
+  vertical-align: top;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  margin: 0;
 }
 
-// project style
-[class*="__container"] {
-	max-width: 1087px;
-	margin: 0 auto;
-	padding: 0 15px;
-
-	@media (max-width:  1087px) {
-		max-width: 970px;
-	}
-
-	@media (max-width:  991.98px) {
-		max-width: 750px;
-	}
-
-	@media (max-width:  767.98px) {
-		max-width: none;
-	}
+p {
+  margin: 0;
 }
 
-.wrapper {
-	display: flex;
-	overflow: hidden;
-	min-height: 100%;
-	flex-direction: column;
+a {
+  text-decoration: none;
 }

@@ -1,0 +1,55 @@
+.media {
+  margin: 0 48px 0;
+  padding: 28px 0 0;
+  text-align: center;
+  position: relative;
+  max-width: 373px;
+  flex: 0 1 50%;
+  width: 100%;
+
+  &__item {
+    z-index: -1;
+    position: absolute;
+    border-radius: 30px;
+    background-color: $pink;
+
+    &--top {
+      top: 0;
+      left: 0;
+      width: 147px;
+      height: 147px;
+    }
+
+    &--middle {
+      bottom: 108px;
+      right: 34px;
+      width: 77px;
+      height: 77px;
+    }
+
+    &--bottom {
+      left: 32px;
+      bottom: 8px;
+      width: 77px;
+      height: 77px;
+
+      @media (max-width: 997.98px) {
+        bottom: 25px;
+      }
+    }
+
+    @media (max-width:  457.98px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 997.98px) {
+    padding: 22px 38px;
+  }
+
+  @media (max-width:  457.98px) {
+    padding: 0;
+    border-radius: 23px;
+    background-color: $pink;
+  }
+}

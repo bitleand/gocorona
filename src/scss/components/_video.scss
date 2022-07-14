@@ -1,0 +1,31 @@
+.video {
+  align-items: center;
+  display: inline-flex;
+
+  &-img {
+    flex: 0 0 44px;
+  }
+
+  &-content {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      font-size: 13px;
+      color: $lightGray;
+      letter-spacing: 1.5px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__text {
+      text-transform: uppercase;
+      font-size: 9px;
+      color: $black;
+      letter-spacing: 2px;
+    }
+  }
+}

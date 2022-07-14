@@ -1,0 +1,32 @@
+/* stylelint-disable */
+
+@mixin bgCover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin imgSprite($w, $h, $fill, $objFit) {
+  width: $w;
+  height: $h;
+  fill: $fill;
+  object-fit: $objFit;
+}
+
+@mixin video($objFit, $dis, $h, $w) {
+  object-fit: $objFit;
+  display: $dis;
+  height: $h;
+  width: $w;
+}
+
+@mixin image-set($pathToImage) {
+  background-image: url("#{$pathToImage}.jpg");
+  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+  background-image: image-set(
+    /* stylelint-disable-next-line function-comma-newline-after */
+    "#{$pathToImage}.avif"type("image/avif"),
+    "#{$pathToImage}.webp"type("image/webp"),
+    "#{$pathToImage}.jpg"type("image/jpg")
+  );
+}

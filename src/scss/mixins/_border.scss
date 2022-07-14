@@ -1,0 +1,6 @@
+@mixin border($brClr, $brStyle, $brRadius, $brW) {
+  border-color: $brClr;
+  border-style: $brStyle;
+  border-radius: $brRadius;
+  border-width: $brW;
+}
